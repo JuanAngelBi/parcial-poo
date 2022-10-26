@@ -13,33 +13,58 @@ export default function Table() {
     const col =[{
         name:"Codigo Producto",
         selector: i => i.id,
-        sortable:true
+        sortable:true,
+        style: {
+            background: "red",
+            text: "bold"
+        }
     },{
         name:"Descripcion",
         selector:i => i.descripcion,
-        sortable:true
+        sortable:true,
+        style: {
+            background: "red"
+        }
     },{
         name: "Existencias Iniciales",
         selector:i =>i.existenciasIniciales,
-        sortable:true
+        sortable:true,
+        style: {
+            background: "red"
+        }
     },{
         name: "Entradas",
         selector:i =>i.entradas,
-        sortable:true
+        sortable:true,
+        style: {
+            background: "red"
+        }
     },{
         name:"Salidas",
         selector:i=>i.salidas,
-        sortable:true
+        sortable:true,
+        style: {
+            background: "red"
+        }
     },{
         name:"Stock",
         selector:i=>i.stock,
-        sortable:true
+        sortable:true,
+        style: {
+            background: "red"
+        }
     },{
         name:"actualizar",
-        selector:i => <BtnUpdate key={i.id} id={i.id} descripcion={i.descripcion} existenciasIniciales={i.existenciasIniciales} ></BtnUpdate>
+        selector:i => <BtnUpdate key={i.id} id={i.id} descripcion={i.descripcion} existenciasIniciales={i.existenciasIniciales} ></BtnUpdate>,
+        style: {
+            background: "red"
+        }
     },{
         name:"borrar",
-        selector:i=> <BtnDelete key={i.id} id={i.id} coleccion={"productos"} ></BtnDelete>
+        selector:i=> <BtnDelete key={i.id} id={i.id} coleccion={"productos"} ></BtnDelete>,
+        style: {
+            background: "red"
+        }
     }]
 
     useEffect(() => {
