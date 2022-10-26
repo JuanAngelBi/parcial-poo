@@ -2,7 +2,7 @@
 function App() {
   return (
     <>
-      <h2>Parcial POO</h2>
+      <h3>Parcial POO</h3>
     </>
   );
 }
