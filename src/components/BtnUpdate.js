@@ -41,8 +41,8 @@ export default function BtnUpdate(props) {
                         </div>
                         <div className="modal-body">
                             <form onSubmit={handleUpdate}>
-                                <input className="form-control my-2" name="descripcion" onChange={handleChange} defaultValue = {props.descripcion}></input>
-                                <input className="form-control my-2" name="existenciasIniciales" onChange={handleChange} defaultValue = {props.existenciasIniciales}></input>
+                                <input className="form-control my-2" name="descripcion" onChange={handleChange} defaultValue = {props.descripcion} placeholder="Descripcion"></input>
+                                <input className="form-control my-2" name="existenciasIniciales" onChange={handleChange} defaultValue = {props.existenciasIniciales} placeholder="Existencias iniciales"></input>
                                 <button className="btn btn-secondary" onClick={handleUpdate} type="submit">actualizar</button>
                             </form>
                         </div>
